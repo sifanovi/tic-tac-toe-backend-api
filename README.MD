@@ -45,7 +45,7 @@ to run migrations on test database
  # `make down up` 
     it will start the mysql container
     after that ->
-   ### `npm run crete:developement:db` 
+   ### `npm run create:developement:db` 
      for creating the development database after that->
      
    ### `sequelize db:migrate`
