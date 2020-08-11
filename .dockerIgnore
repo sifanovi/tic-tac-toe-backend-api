@@ -1,0 +1,6 @@
+node_modules
+npm-debug.log
+mysql_data/
+.idea
+.DS_Store
+

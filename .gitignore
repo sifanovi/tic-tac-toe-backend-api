@@ -1,0 +1,4 @@
+mysql_data/
+.idea
+.DS_Store
+/node_modules

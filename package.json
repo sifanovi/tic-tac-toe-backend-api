@@ -1,0 +1,37 @@
+{
+  "name": "tic-toc-backend",
+  "version": "1.0.0",
+  "description": "tic-toc backend storage",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
+    "create:developement:db": "cross-env NODE_ENV=development npx sequelize-cli db:create",
+    "create:test:db": "cross-env NODE_ENV=test npx sequelize-cli db:create",
+    "migrate:test:db": "cross-env NODE_ENV=test sequelize db:migrate"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "author": "SJ Nayeem",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-status-codes": "^1.4.0",
+    "jest": "^26.3.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.4",
+    "sequelize": "^6.3.4",
+    "sequelize-cli": "^6.2.0",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  }
+}
